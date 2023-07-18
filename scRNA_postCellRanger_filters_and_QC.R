@@ -11,6 +11,9 @@ library(scDblFinder)
 args = commandArgs(trailingOnly=TRUE)
 sampleid <- args[1]
 
+######## Read individual CellRanger Outputs,     ########
+######## perform hard filters and normalization, ########
+######## doublet detectio nand soupX correction  ########
 
 rawdir = sprintf('/mnt/vol-hdd/projects/ink_scrna/cellranger_output/%s/outs/multi/count/', sampleid)
 outdir = sprintf('/mnt/vol-hdd/projects/ink_scrna/seurat_output/preprocessing/%s/', sampleid)
