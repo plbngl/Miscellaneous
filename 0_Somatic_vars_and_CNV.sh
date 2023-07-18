@@ -1,5 +1,6 @@
 !/bin/bash
 
+
 samp=$1
 dir=$2
 WTBAM=$3
